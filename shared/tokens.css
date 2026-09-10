@@ -1,0 +1,36 @@
+:root {
+  /* Brand Colors */
+  --primary: #8b5e34;
+  --primary-dark: #5c3a21;
+  --secondary: #7c571d;
+  --secondary-container: #fecc86;
+  --tertiary: #8f2c31;
+
+  /* Backgrounds & Neutrals */
+  --background: #faf7f2;
+  --surface: #ffffff;
+  --surface-low: #f6f3f2;
+  --surface-bright: #fcf9f8;
+  --text: #1b1c1c;
+  --text-muted: #6f6a63;
+  --border: #e8ded2;
+
+  /* Functional */
+  --success: #3f7d58;
+  --error: #b23a48;
+
+  /* Layout & Radii */
+  --container-max: 1200px;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 24px;
+
+  /* Shadows */
+  --shadow-sm: 0 4px 14px rgba(92, 58, 33, 0.05);
+  --shadow-md: 0 10px 30px rgba(92, 58, 33, 0.08);
+
+  /* Fonts */
+  --font-heading: "Playfair Display", Georgia, serif;
+  --font-body: "Inter", system-ui, -apple-system, sans-serif;
+}
