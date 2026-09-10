@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Jyoti Music — Discover a curated collection of fine musical instruments and enrol in expert-led music classes. Bringing the joy of music to every home." />
+  <title>Jyoti Music | Fine Instruments &amp; Music Academy</title>
+
+  <!-- Google Fonts — Playfair Display & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet" />
+
+  <!-- Module stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ==========================================
+       HEADER & NAVIGATION
+       ========================================== -->
+  <header class="home-header" id="home-header" role="banner">
+    <nav class="home-nav" aria-label="Main navigation">
+
+      <a href="#home-hero" class="home-logo" aria-label="Jyoti Music — go to homepage">
+        Jyoti Music
+      </a>
+
+      <!-- Mobile overlay -->
+      <div class="home-nav-overlay" id="home-nav-overlay" aria-hidden="true"></div>
+
+      <!-- Nav links -->
+      <ul class="home-nav-links" id="home-nav-links" role="list">
+        <li><a href="#home-hero"        class="home-nav-link home-nav-link--active">Home</a></li>
+        <li><a href="#home-instruments" class="home-nav-link">Instruments</a></li>
+        <li><a href="#home-academy"     class="home-nav-link">Academy</a></li>
+        <li><a href="#home-why"         class="home-nav-link">Why Us</a></li>
+        <li><a href="#home-products"    class="home-nav-link">Shop</a></li>
+        <li><a href="#home-gallery"     class="home-nav-link">Gallery</a></li>
+        <li><a href="#home-enquiry"     class="home-nav-link">Enquire</a></li>
+      </ul>
+
+      <!-- Hamburger toggle -->
+      <button
+        class="home-nav-toggle"
+        id="home-nav-toggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="home-nav-links"
+      >
+        <span class="home-nav-toggle-bar"></span>
+        <span class="home-nav-toggle-bar"></span>
+        <span class="home-nav-toggle-bar"></span>
+      </button>
+
+    </nav>
+  </header>
+
+
+  <main id="main-content">
+
+    <!-- ==========================================
+         HERO SECTION (IMAGE & CONTENT SLIDER)
+         ========================================== -->
+    <section
+      class="home-hero"
+      id="home-hero"
+      aria-label="Jyoti Music Highlights Slider"
+      role="region"
+      aria-roledescription="carousel"
+    >
+      <div class="home-hero-slider" id="home-hero-slider" aria-live="polite">
+
+        <!-- Slide 1: Handcrafted Instruments -->
+        <div
+          class="home-hero-slide home-hero-slide--active"
+          role="group"
+          aria-roledescription="slide"
+          aria-label="Slide 1 of 4: Handcrafted Instruments"
+          data-slide="0"
+        >
+          <div class="home-hero-slide-bg" style="background-image: url('assets/hero-instruments.jpg');" role="img" aria-label="Jyoti Music showroom with guitars, sitar, and upright piano"></div>
+          <div class="home-hero-slide-overlay" aria-hidden="true"></div>
+          <div class="home-container home-hero-content">
+            <span class="home-hero-eyebrow">Handcrafted Instruments &bull; Est. With Passion</span>
+            <h1 class="home-hero-title">
+              Where Every Note<br />
+              Finds Its <em>True Voice</em>
+            </h1>
+            <p class="home-hero-description">
+              Explore our handpicked collection of classical, acoustic, and traditional Indian instruments crafted from seasoned tonewoods. Each piece is individually inspected, tuned, and calibrated to provide rich acoustic resonance, effortless touch, and lifelong inspiration.
+            </p>
+            <div class="home-hero-actions">
+              <a href="#home-instruments" class="home-btn home-btn--primary home-btn--lg">
+                Browse Instruments
+              </a>
+              <a href="#home-enquiry" class="home-btn home-btn--secondary home-btn--lg">
+                Visit Showroom
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2: Music Academy -->
+        <div
+          class="home-hero-slide"
+          role="group"
+          aria-roledescription="slide"
+          aria-label="Slide 2 of 4: Jyoti Music Academy"
+          data-slide="1"
+        >
+          <div class="home-hero-slide-bg" style="background-image: url('assets/hero-academy.jpg');" role="img" aria-label="Music instructor teaching guitar to a young student"></div>
+          <div class="home-hero-slide-overlay" aria-hidden="true"></div>
+          <div class="home-container home-hero-content">
+            <span class="home-hero-eyebrow">Jyoti Music Academy &bull; All Ages &amp; Levels</span>
+            <h2 class="home-hero-title">
+              Master the Craft With<br />
+              <em>Devoted Mentors</em>
+            </h2>
+            <p class="home-hero-description">
+              Whether you are discovering your first acoustic guitar chords or mastering intricate classical ragas, our academy nurtures musical fluency in a welcoming, structured environment. Benefit from personalized one-on-one sessions led by experienced concert musicians.
+            </p>
+            <div class="home-hero-actions">
+              <a href="#home-academy" class="home-btn home-btn--primary home-btn--lg">
+                Explore Academy
+              </a>
+              <a href="#home-enquiry" class="home-btn home-btn--secondary home-btn--lg">
+                Book a Trial Class
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3: Indian Classical Heritage -->
+        <div
+          class="home-hero-slide"
+          role="group"
+          aria-roledescription="slide"
+          aria-label="Slide 3 of 4: Indian Classical Heritage"
+          data-slide="2"
+        >
+          <div class="home-hero-slide-bg" style="background-image: url('assets/hero-classical.jpg');" role="img" aria-label="Concert sitar and professional tabla pair on an ornate rug"></div>
+          <div class="home-hero-slide-overlay" aria-hidden="true"></div>
+          <div class="home-container home-hero-content">
+            <span class="home-hero-eyebrow">Classical Heritage &bull; Artisan Craftsmanship</span>
+            <h2 class="home-hero-title">
+              Authentic Sitars, Tablas &amp;<br />
+              <em>Sacred Harmonies</em>
+            </h2>
+            <p class="home-hero-description">
+              Experience the transcendent acoustic depth of Hindustani music through our master-crafted Sitars, concert-grade Tablas, and aged bamboo Bansuris. Built by traditional luthier families with centuries of acoustic heritage and immaculate tonal precision.
+            </p>
+            <div class="home-hero-actions">
+              <a href="#home-instruments" class="home-btn home-btn--primary home-btn--lg">
+                View Classical Range
+              </a>
+              <a href="#home-enquiry" class="home-btn home-btn--secondary home-btn--lg">
+                Custom Instrument Order
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 4: Studio & Stage Performance -->
+        <div
+          class="home-hero-slide"
+          role="group"
+          aria-roledescription="slide"
+          aria-label="Slide 4 of 4: Studio and Stage Gear"
+          data-slide="3"
+        >
+          <div class="home-hero-slide-bg" style="background-image: url('assets/hero-studio.jpg');" role="img" aria-label="Acoustic music recording studio with upright piano and violin"></div>
+          <div class="home-hero-slide-overlay" aria-hidden="true"></div>
+          <div class="home-container home-hero-content">
+            <span class="home-hero-eyebrow">Studio &amp; Stage &bull; Pro Acoustic Audio</span>
+            <h2 class="home-hero-title">
+              Precision Acoustic Instruments for<br />
+              <em>Concert Stages</em>
+            </h2>
+            <p class="home-hero-description">
+              Elevate your rehearsals and stage performances with our premier selection of studio upright pianos, responsive digital keyboards, and expressive orchestral violins. Every unit is tested, set up, and backed by our in-house maintenance specialists.
+            </p>
+            <div class="home-hero-actions">
+              <a href="#home-products" class="home-btn home-btn--primary home-btn--lg">
+                Shop Popular Gear
+              </a>
+              <a href="#home-enquiry" class="home-btn home-btn--secondary home-btn--lg">
+                Speak to a Specialist
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /.home-hero-slider -->
+
+      <!-- Slider Controls -->
+      <div class="home-hero-controls" role="group" aria-label="Hero slider controls">
+        <button class="home-hero-btn home-hero-btn--prev" id="home-hero-prev" aria-label="Previous slide">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="22" height="22">
+            <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+        </button>
+
+        <div class="home-hero-dots" id="home-hero-dots" role="group" aria-label="Slide indicators">
+          <button class="home-hero-dot home-hero-dot--active" data-slide-index="0" aria-label="Go to slide 1" aria-pressed="true"></button>
+          <button class="home-hero-dot" data-slide-index="1" aria-label="Go to slide 2" aria-pressed="false"></button>
+          <button class="home-hero-dot" data-slide-index="2" aria-label="Go to slide 3" aria-pressed="false"></button>
+          <button class="home-hero-dot" data-slide-index="3" aria-label="Go to slide 4" aria-pressed="false"></button>
+        </div>
+
+        <button class="home-hero-btn home-hero-btn--next" id="home-hero-next" aria-label="Next slide">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="22" height="22">
+            <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+        </button>
+      </div>
+
+    </section>
+
+
+    <!-- ==========================================
+         FEATURED INSTRUMENTS
+         ========================================== -->
+    <section class="home-section home-instruments" id="home-instruments" aria-labelledby="home-instruments-heading">
+      <div class="home-container">
+
+        <header class="home-section-header home-reveal">
+          <h2 class="home-section-title" id="home-instruments-heading">Featured Instruments</h2>
+          <hr class="home-section-divider" />
+          <p class="home-section-subtitle">
+            Each instrument in our collection is curated for its superior build craftsmanship, tonal balance, and effortless playability for both students and concert artists.
+          </p>
+        </header>
+
+        <div class="home-instruments-grid" role="list">
+
+          <!-- Card 1: Classical Acoustic Guitar -->
+          <article class="home-instrument-card home-reveal" role="listitem">
+            <div class="home-instrument-card-img">
+              <img src="assets/guitar.jpg" alt="Handcrafted classical acoustic guitar with solid spruce top" loading="lazy" />
+            </div>
+            <div class="home-instrument-card-body">
+              <p class="home-instrument-card-category">String &bull; Acoustic</p>
+              <h3 class="home-instrument-card-name">Classical Acoustic Guitar</h3>
+              <p class="home-instrument-card-desc">
+                Warm, resonant tone ideal for fingerstyle playing and classical repertoire. Features a solid Sitka spruce soundboard with selected rosewood back and sides.
+              </p>
+              <div class="home-instrument-card-footer">
+                <span class="home-instrument-card-price">&#8377;14,999</span>
+                <a href="#home-enquiry" class="home-btn home-btn--secondary home-btn--sm" aria-label="View Classical Acoustic Guitar details">
+                  View Details
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Professional Tabla Set -->
+          <article class="home-instrument-card home-reveal" role="listitem">
+            <div class="home-instrument-card-img">
+              <img src="assets/tabla.jpg" alt="Concert-grade Indian Tabla set with heavy copper bayan and sheesham dayan" loading="lazy" />
+            </div>
+            <div class="home-instrument-card-body">
+              <p class="home-instrument-card-category">Percussion &bull; Classical</p>
+              <h3 class="home-instrument-card-name">Professional Tabla Set</h3>
+              <p class="home-instrument-card-desc">
+                Concert-ready pair with a 3.5kg heavy copper bayan and seasoned dark sheesham dayan. Delivers deep, resonant bass and articulate high-frequency bols.
+              </p>
+              <div class="home-instrument-card-footer">
+                <span class="home-instrument-card-price">&#8377;18,500</span>
+                <a href="#home-enquiry" class="home-btn home-btn--secondary home-btn--sm" aria-label="View Professional Tabla Set details">
+                  View Details
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Studio Upright Piano -->
+          <article class="home-instrument-card home-reveal" role="listitem">
+            <div class="home-instrument-card-img">
+              <img src="assets/piano.jpg" alt="Polished walnut studio upright acoustic piano" loading="lazy" />
+            </div>
+            <div class="home-instrument-card-body">
+              <p class="home-instrument-card-category">Keyboard &bull; Acoustic</p>
+              <h3 class="home-instrument-card-name">Studio Upright Piano</h3>
+              <p class="home-instrument-card-desc">
+                88 fully weighted keys with responsive grand-piano hammer action and cast iron soundboard. Designed for daily recital practice and professional home studios.
+              </p>
+              <div class="home-instrument-card-footer">
+                <span class="home-instrument-card-price">&#8377;1,45,000</span>
+                <a href="#home-enquiry" class="home-btn home-btn--secondary home-btn--sm" aria-label="View Studio Upright Piano details">
+                  View Details
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4: Bansuri Bamboo Flute -->
+          <article class="home-instrument-card home-reveal" role="listitem">
+            <div class="home-instrument-card-img">
+              <img src="assets/bansuri.jpg" alt="Handcrafted Indian classical bamboo bansuri flute" loading="lazy" />
+            </div>
+            <div class="home-instrument-card-body">
+              <p class="home-instrument-card-category">Wind &bull; Classical</p>
+              <h3 class="home-instrument-card-name">Bansuri Bamboo Flute (G Natural)</h3>
+              <p class="home-instrument-card-desc">
+                Hand-harvested and aged Assam bamboo tuned precisely to 440Hz concert pitch. Produces a breathy, emotive tone favored by classical Indian maestros.
+              </p>
+              <div class="home-instrument-card-footer">
+                <span class="home-instrument-card-price">&#8377;3,200</span>
+                <a href="#home-enquiry" class="home-btn home-btn--secondary home-btn--sm" aria-label="View Bansuri Bamboo Flute details">
+                  View Details
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5: Concert Raga Sitar -->
+          <article class="home-instrument-card home-reveal" role="listitem">
+            <div class="home-instrument-card-img">
+              <img src="assets/sitar.jpg" alt="Traditional Teak wood sitar with carved gourd resonator" loading="lazy" />
+            </div>
+            <div class="home-instrument-card-body">
+              <p class="home-instrument-card-category">String &bull; Classical</p>
+              <h3 class="home-instrument-card-name">Concert Raga Sitar</h3>
+              <p class="home-instrument-card-desc">
+                Hand-carved seasoned Burma teak neck with 7 main strings and 13 sympathetic tarab strings. Produces the unmistakable sustained resonance of classical Indian ragas.
+              </p>
+              <div class="home-instrument-card-footer">
+                <span class="home-instrument-card-price">&#8377;32,000</span>
+                <a href="#home-enquiry" class="home-btn home-btn--secondary home-btn--sm" aria-label="View Concert Raga Sitar details">
+                  View Details
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 6: Handcrafted Violin Outfit -->
+          <article class="home-instrument-card home-reveal" role="listitem">
+            <div class="home-instrument-card-img">
+              <img src="assets/violin.jpg" alt="Handcrafted acoustic violin with bow in a fitted velvet case" loading="lazy" />
+            </div>
+            <div class="home-instrument-card-body">
+              <p class="home-instrument-card-category">String &bull; Orchestral</p>
+              <h3 class="home-instrument-card-name">Handcrafted Violin Outfit (4/4)</h3>
+              <p class="home-instrument-card-desc">
+                Solid spruce top and flamed maple body with ebony pegs and fingerboard. Shipped with a Brazilwood horsehair bow, premium rosin, and a protective case.
+              </p>
+              <div class="home-instrument-card-footer">
+                <span class="home-instrument-card-price">&#8377;16,800</span>
+                <a href="#home-enquiry" class="home-btn home-btn--secondary home-btn--sm" aria-label="View Handcrafted Violin Outfit details">
+                  View Details
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div><!-- /.home-instruments-grid -->
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================
+         ACADEMY PREVIEW & COURSE CARDS
+         ========================================== -->
+    <section class="home-section home-academy" id="home-academy" aria-labelledby="home-academy-heading">
+      <div class="home-container">
+
+        <div class="home-academy-layout">
+
+          <div class="home-academy-content home-reveal">
+            <p class="home-instrument-card-category">Music Academy &bull; Est. 2014</p>
+            <h2 class="home-academy-title" id="home-academy-heading">
+              Learn Music From Passionate, Concert-Proven Instructors
+            </h2>
+            <p class="home-academy-text">
+              Our music academy provides structured, encouraging instruction tailored to every student's creative ambitions. Whether you are holding an instrument for the first time or preparing for grade exams and stage performances, our faculty supports your individual musical path.
+            </p>
+
+            <ul class="home-academy-list" aria-label="Academy highlights">
+              <li class="home-academy-list-item">
+                <span class="home-academy-check" aria-hidden="true">
+                  <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <polyline points="2,6 5,9 10,3" stroke="#8B5E34" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+                Individual 1-on-1 coaching and collaborative ensemble sessions
+              </li>
+              <li class="home-academy-list-item">
+                <span class="home-academy-check" aria-hidden="true">
+                  <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <polyline points="2,6 5,9 10,3" stroke="#8B5E34" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+                Flexible scheduling for working adults, teens, and young beginners
+              </li>
+              <li class="home-academy-list-item">
+                <span class="home-academy-check" aria-hidden="true">
+                  <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <polyline points="2,6 5,9 10,3" stroke="#8B5E34" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+                Certified curricula in classical guitar, tabla, piano, sitar &amp; vocals
+              </li>
+              <li class="home-academy-list-item">
+                <span class="home-academy-check" aria-hidden="true">
+                  <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <polyline points="2,6 5,9 10,3" stroke="#8B5E34" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+                Annual student recitals and performance experience on real acoustic stages
+              </li>
+            </ul>
+
+            <a href="enquiry.html" class="home-academy-link" aria-label="Enquire about music courses at Jyoti Music Academy">
+              Enquire About All Courses
+              <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="18" height="18">
+                <path d="M4 10h12M12 6l4 4-4 4" stroke="#8B5E34" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+
+          <div class="home-academy-visual home-reveal">
+            <img src="assets/academy-lesson.jpg" alt="Music lesson session with instructor and student playing acoustic guitar" loading="lazy" />
+          </div>
+
+        </div>
+
+        <!-- 3 Course Preview Cards -->
+        <div class="home-courses-preview home-reveal">
+          <h3 class="home-courses-preview-heading">Featured Academy Courses</h3>
+
+          <div class="home-courses-grid" role="list">
+
+            <!-- Course 1 -->
+            <article class="home-course-card" role="listitem">
+              <div class="home-course-card-img">
+                <img src="assets/course-guitar.jpg" alt="Acoustic and classical guitar lesson" loading="lazy" />
+              </div>
+              <div class="home-course-card-body">
+                <div class="home-course-meta">
+                  <span class="home-course-level">All Levels</span>
+                  <span class="home-course-duration">Weekly &bull; 1-on-1</span>
+                </div>
+                <h4 class="home-course-title">Acoustic &amp; Classical Guitar</h4>
+                <p class="home-course-desc">
+                  Learn posture, chord progressions, fingerstyle technique, and reading standard notation from beginner fundamentals to advanced classical pieces.
+                </p>
+                <a href="#home-enquiry" class="home-course-cta">Enquire Course &rarr;</a>
+              </div>
+            </article>
+
+            <!-- Course 2 -->
+            <article class="home-course-card" role="listitem">
+              <div class="home-course-card-img">
+                <img src="assets/course-tabla.jpg" alt="Classical tabla training with guru and student" loading="lazy" />
+              </div>
+              <div class="home-course-card-body">
+                <div class="home-course-meta">
+                  <span class="home-course-level">Beginner to Pro</span>
+                  <span class="home-course-duration">Traditional Gharana</span>
+                </div>
+                <h4 class="home-course-title">Hindustani Vocal &amp; Tabla</h4>
+                <p class="home-course-desc">
+                  Master rhythm cycles (Taal), bols, hand placement, and tonal modulation. Grounded in traditional classical Gharana riyaaz and stage accompaniment.
+                </p>
+                <a href="#home-enquiry" class="home-course-cta">Enquire Course &rarr;</a>
+              </div>
+            </article>
+
+            <!-- Course 3 -->
+            <article class="home-course-card" role="listitem">
+              <div class="home-course-card-img">
+                <img src="assets/course-piano.jpg" alt="Piano keyboard lesson with sheet music" loading="lazy" />
+              </div>
+              <div class="home-course-card-body">
+                <div class="home-course-meta">
+                  <span class="home-course-level">Ages 6+ &amp; Adults</span>
+                  <span class="home-course-duration">Grade Syllabus</span>
+                </div>
+                <h4 class="home-course-title">Piano &amp; Keyboard Fundamentals</h4>
+                <p class="home-course-desc">
+                  Develop solid finger mechanics, scales, sight-reading, and chord theory. Tailored for both classical repertoire and modern accompaniment styles.
+                </p>
+                <a href="#home-enquiry" class="home-course-cta">Enquire Course &rarr;</a>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================
+         WHY CHOOSE JYOTI MUSIC
+         ========================================== -->
+    <section class="home-section home-why" id="home-why" aria-labelledby="home-why-heading">
+      <div class="home-container">
+
+        <header class="home-section-header home-reveal">
+          <h2 class="home-section-title" id="home-why-heading">Why Choose Jyoti Music</h2>
+          <hr class="home-section-divider" />
+          <p class="home-section-subtitle">
+            We believe that every musical journey deserves authentic guidance, uncompromised instrument quality, and caring support at every step.
+          </p>
+        </header>
+
+        <div class="home-why-grid">
+
+          <div class="home-why-card home-reveal">
+            <div class="home-why-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2l2.4 6.4H21l-5.4 4 2.1 6.6L12 15l-5.7 4 2.1-6.6L3 8.4h6.6L12 2z"/>
+              </svg>
+            </div>
+            <h3 class="home-why-card-title">Curated Selection</h3>
+            <p class="home-why-card-desc">
+              Every instrument we stock is personally tested for tone, action, tonewood integrity, and finish before it ever reaches our display floor.
+            </p>
+          </div>
+
+          <div class="home-why-card home-reveal">
+            <div class="home-why-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="8" r="4"/>
+                <path d="M6 20v-2a6 6 0 0 1 12 0v2"/>
+              </svg>
+            </div>
+            <h3 class="home-why-card-title">Dedicated Instructors</h3>
+            <p class="home-why-card-desc">
+              Our faculty members are active performing artists and certified teachers who understand how to cultivate joy, technique, and musical expression.
+            </p>
+          </div>
+
+          <div class="home-why-card home-reveal">
+            <div class="home-why-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
+                <path d="M16 3v4M8 3v4M12 12v3M12 15l-2 2M12 15l2 2"/>
+              </svg>
+            </div>
+            <h3 class="home-why-card-title">Flexible Learning</h3>
+            <p class="home-why-card-desc">
+              Whether you prefer weekday evening slots, weekend mornings, or personalized pacing, our class schedules adapt seamlessly to your lifestyle.
+            </p>
+          </div>
+
+          <div class="home-why-card home-reveal">
+            <div class="home-why-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 12l2 2 4-4"/>
+                <path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9c1.86 0 3.58.57 5 1.54"/>
+                <path d="M17 3l4 4-4 4"/>
+              </svg>
+            </div>
+            <h3 class="home-why-card-title">After-Sales Care &amp; Tuning</h3>
+            <p class="home-why-card-desc">
+              Our relationship doesn't end at purchase. Enjoy free initial string set-up, professional tuning advice, and trusted maintenance support.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================
+         POPULAR INSTRUMENTS / STORE PRODUCTS
+         ========================================== -->
+    <section class="home-section home-products" id="home-products" aria-labelledby="home-products-heading">
+      <div class="home-container">
+
+        <header class="home-section-header home-reveal">
+          <h2 class="home-section-title" id="home-products-heading">Popular Instruments &amp; Gear</h2>
+          <hr class="home-section-divider" />
+          <p class="home-section-subtitle">
+            Reliable student favourites, portable practice rigs, and essential instruments chosen most frequently by our community.
+          </p>
+        </header>
+
+        <div class="home-products-grid" role="list">
+
+          <!-- Product 1 -->
+          <article class="home-product-card home-reveal" role="listitem">
+            <div class="home-product-card-img">
+              <img src="assets/product-guitar.jpg" alt="Beginner acoustic guitar starter pack" loading="lazy" />
+            </div>
+            <div class="home-product-card-body">
+              <p class="home-product-card-category">Guitar &bull; Starter Outfit</p>
+              <h3 class="home-product-card-name">Acoustic Starter Pack</h3>
+              <p class="home-product-card-desc">
+                Includes 40-inch dreadnought guitar, padded gig bag, digital clip-on tuner, and plectrums.
+              </p>
+              <div class="home-product-card-footer">
+                <span class="home-product-card-price">&#8377;8,499</span>
+                <a href="#home-enquiry" class="home-btn home-btn--secondary home-btn--sm" aria-label="Enquire about Acoustic Starter Pack">
+                  Enquire
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 2 -->
+          <article class="home-product-card home-reveal" role="listitem">
+            <div class="home-product-card-img">
+              <img src="assets/product-tabla.jpg" alt="Student practice tabla pair" loading="lazy" />
+            </div>
+            <div class="home-product-card-body">
+              <p class="home-product-card-category">Percussion &bull; Practice Set</p>
+              <h3 class="home-product-card-name">Student Tabla Outfit</h3>
+              <p class="home-product-card-desc">
+                Solid wood dayan with tuned brass bayan, padded base rings, tuning hammer, and hard protective covers.
+              </p>
+              <div class="home-product-card-footer">
+                <span class="home-product-card-price">&#8377;11,200</span>
+                <a href="#home-enquiry" class="home-btn home-btn--secondary home-btn--sm" aria-label="Enquire about Student Tabla Outfit">
+                  Enquire
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 3 -->
+          <article class="home-product-card home-reveal" role="listitem">
+            <div class="home-product-card-img">
+              <img src="assets/product-keyboard.jpg" alt="61-key portable digital arranger keyboard" loading="lazy" />
+            </div>
+            <div class="home-product-card-body">
+              <p class="home-product-card-category">Keyboard &bull; Arranger</p>
+              <h3 class="home-product-card-name">61-Key Touch Keyboard</h3>
+              <p class="home-product-card-desc">
+                Touch-responsive synth keys, 400+ instrument voices, built-in metronome, stereo speakers, and power supply.
+              </p>
+              <div class="home-product-card-footer">
+                <span class="home-product-card-price">&#8377;19,990</span>
+                <a href="#home-enquiry" class="home-btn home-btn--secondary home-btn--sm" aria-label="Enquire about 61-Key Touch Keyboard">
+                  Enquire
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 4 -->
+          <article class="home-product-card home-reveal" role="listitem">
+            <div class="home-product-card-img">
+              <img src="assets/product-violin.jpg" alt="Student violin with bow and rosin" loading="lazy" />
+            </div>
+            <div class="home-product-card-body">
+              <p class="home-product-card-category">String &bull; Student Kit</p>
+              <h3 class="home-product-card-name">Student Violin Kit (3/4 &amp; 4/4)</h3>
+              <p class="home-product-card-desc">
+                Fine spruce top with micro-tuners on all strings for easy tuning, lightweight case, and Mongolian horsehair bow.
+              </p>
+              <div class="home-product-card-footer">
+                <span class="home-product-card-price">&#8377;12,450</span>
+                <a href="#home-enquiry" class="home-btn home-btn--secondary home-btn--sm" aria-label="Enquire about Student Violin Kit">
+                  Enquire
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="home-products-cta home-reveal">
+          <a href="#home-enquiry" class="home-btn home-btn--primary">
+            Request Catalogue &amp; Price List
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================
+         TESTIMONIALS CAROUSEL
+         ========================================== -->
+    <section class="home-section home-testimonials" id="home-testimonials" aria-labelledby="home-testimonials-heading">
+      <div class="home-container">
+
+        <header class="home-section-header home-reveal">
+          <h2 class="home-section-title" id="home-testimonials-heading">What Our Students &amp; Musicians Say</h2>
+          <hr class="home-section-divider" />
+          <p class="home-section-subtitle">
+            Authentic reflections from learners, parents, and performing artists who trust Jyoti Music for their musical journey.
+          </p>
+        </header>
+
+        <div
+          class="home-testimonials-carousel home-reveal"
+          role="region"
+          aria-label="Student testimonials carousel"
+          aria-roledescription="carousel"
+        >
+          <div
+            class="home-testimonials-track"
+            id="home-testimonials-track"
+            aria-live="polite"
+            aria-atomic="true"
+          >
+
+            <div class="home-testimonial-slide" role="group" aria-roledescription="slide" aria-label="Testimonial 1 of 4">
+              <div class="home-testimonial-content">
+                <div class="home-testimonial-quote-mark" aria-hidden="true">&ldquo;</div>
+                <p class="home-testimonial-text">
+                  I had always wanted to learn classical guitar but hesitated because I thought it was too late to start. After my first month at Jyoti Music, my instructor broke down fingerpicking so naturally that practice became the highlight of my week.
+                </p>
+                <div class="home-testimonial-author">
+                  <div class="home-testimonial-avatar home-placeholder-bg-1" aria-hidden="true">A</div>
+                  <span class="home-testimonial-name">Anjali Mehta</span>
+                  <span class="home-testimonial-role">Adult Guitar Student &bull; 8 Months</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="home-testimonial-slide" role="group" aria-roledescription="slide" aria-label="Testimonial 2 of 4">
+              <div class="home-testimonial-content">
+                <div class="home-testimonial-quote-mark" aria-hidden="true">&ldquo;</div>
+                <p class="home-testimonial-text">
+                  Finding a concert-grade tabla set with the right weight balance and tonal sustain is rare. The team at Jyoti Music spent over an hour letting me test different bayans until we found the perfect pitch. Outstanding dedication to quality.
+                </p>
+                <div class="home-testimonial-author">
+                  <div class="home-testimonial-avatar home-placeholder-bg-2" aria-hidden="true">R</div>
+                  <span class="home-testimonial-name">Rohan Sharma</span>
+                  <span class="home-testimonial-role">Classical Performing Artist</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="home-testimonial-slide" role="group" aria-roledescription="slide" aria-label="Testimonial 3 of 4">
+              <div class="home-testimonial-content">
+                <div class="home-testimonial-quote-mark" aria-hidden="true">&ldquo;</div>
+                <p class="home-testimonial-text">
+                  My nine-year-old daughter began keyboard lessons here last winter. Her teacher balances fun songs with essential music theory so effortlessly that she practices without any prompting from us. We couldn't be happier with her progress.
+                </p>
+                <div class="home-testimonial-author">
+                  <div class="home-testimonial-avatar home-placeholder-bg-3" aria-hidden="true">P</div>
+                  <span class="home-testimonial-name">Priya Nair</span>
+                  <span class="home-testimonial-role">Parent of Piano Student</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="home-testimonial-slide" role="group" aria-roledescription="slide" aria-label="Testimonial 4 of 4">
+              <div class="home-testimonial-content">
+                <div class="home-testimonial-quote-mark" aria-hidden="true">&ldquo;</div>
+                <p class="home-testimonial-text">
+                  I purchased my bamboo bansuri and also had an older sitar re-stringed and tuned at their workshop. The craftsmanship, genuine knowledge of Indian classical music, and honest pricing make Jyoti Music unmatched.
+                </p>
+                <div class="home-testimonial-author">
+                  <div class="home-testimonial-avatar home-placeholder-bg-5" aria-hidden="true">K</div>
+                  <span class="home-testimonial-name">Karan Verma</span>
+                  <span class="home-testimonial-role">Flautist &amp; Sitar Enthusiast</span>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- /.home-testimonials-track -->
+
+          <div class="home-testimonials-controls" role="group" aria-label="Carousel navigation">
+            <button class="home-testimonials-btn" id="home-testimonials-prev" aria-label="Previous testimonial">
+              <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M13 4l-6 6 6 6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+
+            <div class="home-testimonials-dots" id="home-testimonials-dots" role="group" aria-label="Slide indicators">
+              <button class="home-testimonials-dot home-testimonials-dot--active" data-index="0" aria-label="Go to testimonial 1" aria-pressed="true"></button>
+              <button class="home-testimonials-dot" data-index="1" aria-label="Go to testimonial 2" aria-pressed="false"></button>
+              <button class="home-testimonials-dot" data-index="2" aria-label="Go to testimonial 3" aria-pressed="false"></button>
+              <button class="home-testimonials-dot" data-index="3" aria-label="Go to testimonial 4" aria-pressed="false"></button>
+            </div>
+
+            <button class="home-testimonials-btn" id="home-testimonials-next" aria-label="Next testimonial">
+              <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M7 4l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+
+        </div><!-- /.home-testimonials-carousel -->
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================
+         GALLERY PREVIEW WITH LIGHTBOX
+         ========================================== -->
+    <section class="home-section home-gallery" id="home-gallery" aria-labelledby="home-gallery-heading">
+      <div class="home-container">
+
+        <header class="home-section-header home-reveal">
+          <h2 class="home-section-title" id="home-gallery-heading">From Our Studio &amp; Showroom</h2>
+          <hr class="home-section-divider" />
+          <p class="home-section-subtitle">
+            A visual glimpse into our acoustic instrument showroom, practice studios, and student recital stages.
+          </p>
+        </header>
+
+        <div class="home-gallery-grid home-reveal" role="list" aria-label="Gallery images">
+
+          <button
+            class="home-gallery-item"
+            data-gallery-src="assets/gallery-showroom.jpg"
+            data-gallery-label="Main instrument showroom lined with acoustic guitars, upright piano, and sitar"
+            aria-label="Open full view: Main instrument showroom"
+            role="listitem"
+          >
+            <img src="assets/gallery-showroom.jpg" alt="Main instrument showroom display with acoustic instruments" loading="lazy" />
+            <span class="home-gallery-overlay-badge" aria-hidden="true">View Photo</span>
+          </button>
+
+          <button
+            class="home-gallery-item"
+            data-gallery-src="assets/gallery-tabla-lesson.jpg"
+            data-gallery-label="A focused 1-on-1 acoustic guitar lesson in our sunlit practice studio"
+            aria-label="Open full view: Focused acoustic music lesson"
+            role="listitem"
+          >
+            <img src="assets/gallery-tabla-lesson.jpg" alt="Acoustic music lesson session in progress" loading="lazy" />
+            <span class="home-gallery-overlay-badge" aria-hidden="true">View Photo</span>
+          </button>
+
+          <button
+            class="home-gallery-item"
+            data-gallery-src="assets/gallery-piano-group.jpg"
+            data-gallery-label="Studio recording room featuring acoustic diffusers, piano, and vintage violin"
+            aria-label="Open full view: Studio recording room"
+            role="listitem"
+          >
+            <img src="assets/gallery-piano-group.jpg" alt="Acoustic studio recording room with upright piano" loading="lazy" />
+            <span class="home-gallery-overlay-badge" aria-hidden="true">View Photo</span>
+          </button>
+
+          <button
+            class="home-gallery-item"
+            data-gallery-src="assets/gallery-sitar-detail.jpg"
+            data-gallery-label="Artisan carving detail and sympathetic tuning pegs on a concert sitar"
+            aria-label="Open full view: Sitar artisan carving detail"
+            role="listitem"
+          >
+            <img src="assets/gallery-sitar-detail.jpg" alt="Close-up detail of handcrafted sitar and copper tabla" loading="lazy" />
+            <span class="home-gallery-overlay-badge" aria-hidden="true">View Photo</span>
+          </button>
+
+          <button
+            class="home-gallery-item"
+            data-gallery-src="assets/gallery-violin-workshop.jpg"
+            data-gallery-label="Handcrafted violin on a velvet stand inside our acoustic sound studio"
+            aria-label="Open full view: Handcrafted violin on stand"
+            role="listitem"
+          >
+            <img src="assets/gallery-violin-workshop.jpg" alt="Violin in fitted case in acoustic studio" loading="lazy" />
+            <span class="home-gallery-overlay-badge" aria-hidden="true">View Photo</span>
+          </button>
+
+          <button
+            class="home-gallery-item"
+            data-gallery-src="assets/gallery-recital.jpg"
+            data-gallery-label="Acoustic guitar wall showcase with curated tonewood models"
+            aria-label="Open full view: Acoustic guitar showcase"
+            role="listitem"
+          >
+            <img src="assets/gallery-recital.jpg" alt="Acoustic guitars displayed along timber wall" loading="lazy" />
+            <span class="home-gallery-overlay-badge" aria-hidden="true">View Photo</span>
+          </button>
+
+        </div><!-- /.home-gallery-grid -->
+
+        <p class="home-gallery-hint home-reveal">
+          Click any photo to enlarge with detailed caption. Use Escape key or the close button to dismiss.
+        </p>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================
+         LIGHTBOX MODAL (controlled by vanilla JS)
+         ========================================== -->
+    <div
+      class="home-lightbox"
+      id="home-lightbox"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Gallery photo viewer"
+      aria-hidden="true"
+    >
+      <button class="home-lightbox-close" id="home-lightbox-close" aria-label="Close image viewer">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+      <div class="home-lightbox-content" id="home-lightbox-content" aria-live="polite">
+        <img src="" alt="" id="home-lightbox-img" class="home-lightbox-img" />
+        <p class="home-lightbox-caption" id="home-lightbox-caption"></p>
+      </div>
+    </div>
+
+
+    <!-- ==========================================
+         ENQUIRY / CONTACT CTA SECTION
+         ========================================== -->
+    <section class="home-section home-enquiry" id="home-enquiry" aria-labelledby="home-enquiry-heading">
+      <div class="home-container">
+
+        <header class="home-section-header home-reveal">
+          <h2 class="home-section-title" id="home-enquiry-heading">Get in Touch With Us</h2>
+          <hr class="home-section-divider" />
+          <p class="home-section-subtitle">
+            Have a question regarding instrument selection, academy admissions, or instrument maintenance? We are here to help.
+          </p>
+        </header>
+
+        <div class="home-enquiry-layout">
+
+          <!-- Contact Information -->
+          <div class="home-enquiry-info home-reveal">
+            <h3 class="home-enquiry-info-title">We Welcome Your Musical Ambitions</h3>
+            <p class="home-enquiry-info-text">
+              Whether you are looking for guidance on choosing your first instrument, wanting to enroll in our academy classes, or booking an instrument tune-up, our dedicated staff is ready to assist.
+            </p>
+
+            <div class="home-enquiry-detail">
+              <span class="home-enquiry-detail-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </span>
+              <span>Visit our showroom &bull; Jyoti Music Complex, Station Road</span>
+            </div>
+
+            <div class="home-enquiry-detail">
+              <span class="home-enquiry-detail-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+              </span>
+              <span>Direct Phone: +91 98765 43210 / (022) 2845-1100</span>
+            </div>
+
+            <div class="home-enquiry-detail">
+              <span class="home-enquiry-detail-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </span>
+              <span>Official Email: contact@jyotimusic.in</span>
+            </div>
+
+            <div class="home-enquiry-hours">
+              <p class="home-enquiry-hours-title">Showroom &amp; Academy Hours:</p>
+              <p>Monday &ndash; Saturday: 10:00 AM &ndash; 8:00 PM</p>
+              <p>Sunday: 11:00 AM &ndash; 5:00 PM</p>
+            </div>
+          </div>
+
+          <!-- Enquiry Form Card -->
+          <div class="home-enquiry-form-card home-reveal">
+
+            <!-- Success confirmation box (hidden until submitted) -->
+            <div class="home-form-success" id="home-form-success" aria-live="polite">
+              <div class="home-form-success-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <h3 class="home-form-success-title">Thank You, Your Enquiry Is Received!</h3>
+              <p class="home-form-success-text">
+                We have registered your details. A member of our instrument team or academy coordinator will contact you within 24 hours.
+              </p>
+              <button type="button" class="home-btn home-btn--secondary home-btn--sm" id="home-form-reset-btn" style="margin-top: 20px;">
+                Send Another Enquiry
+              </button>
+            </div>
+
+            <!-- Form -->
+            <form
+              class="home-enquiry-form"
+              id="home-enquiry-form"
+              novalidate
+              aria-label="Jyoti Music Enquiry Form"
+            >
+              <div class="home-form-row">
+                <div class="home-form-group">
+                  <label class="home-form-label" for="home-field-name">Full Name <span class="home-form-required" aria-label="required">*</span></label>
+                  <input
+                    class="home-form-input"
+                    type="text"
+                    id="home-field-name"
+                    name="name"
+                    placeholder="e.g. Aditi Sharma"
+                    autocomplete="name"
+                    aria-required="true"
+                    aria-describedby="home-field-name-error"
+                      pattern="[A-Za-z\s]+"
+  maxlength="50"
+                  />
+                  <span class="home-form-error" id="home-field-name-error" role="alert"></span>
+                </div>
+
+                <div class="home-form-group">
+                  <label class="home-form-label" for="home-field-email">Email Address <span class="home-form-required" aria-label="required">*</span></label>
+                  <input
+                    class="home-form-input"
+                    type="email"
+                    id="home-field-email"
+                    name="email"
+                    placeholder="aditi@example.com"
+                    autocomplete="email"
+                    aria-required="true"
+                    aria-describedby="home-field-email-error"
+                  />
+                  <span class="home-form-error" id="home-field-email-error" role="alert"></span>
+                </div>
+              </div>
+
+              <div class="home-form-row">
+                <div class="home-form-group">
+                  <label class="home-form-label" for="home-field-phone">Phone Number <span class="home-form-required" aria-label="required">*</span></label>
+                  <input
+                    class="home-form-input"
+                    type="tel"
+                    id="home-field-phone"
+                    name="phone"
+                    placeholder="e.g. 9876543210"
+                    autocomplete="tel"
+                      inputmode="numeric"
+  maxlength="10"
+                    aria-required="true"
+                    aria-describedby="home-field-phone-error"
+                  />
+                  <span class="home-form-error" id="home-field-phone-error" role="alert"></span>
+                </div>
+
+                <div class="home-form-group">
+                  <label class="home-form-label" for="home-field-interest">Area of Interest</label>
+                  <select
+                    class="home-form-input"
+                    id="home-field-interest"
+                    name="interest"
+                    aria-label="Select your area of interest"
+                  >
+                    <option value="">&mdash; Please choose an option &mdash;</option>
+                    <option value="instrument-purchase">Purchasing an Instrument</option>
+                    <option value="music-academy">Music Academy / Lessons</option>
+                    <option value="maintenance-tuning">Instrument Repair &amp; Tuning</option>
+                    <option value="general-inquiry">General Question / Visit Showroom</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="home-form-group">
+                <label class="home-form-label" for="home-field-message">Message or Questions <span class="home-form-required" aria-label="required">*</span></label>
+                <textarea
+                  class="home-form-textarea"
+                  id="home-field-message"
+                  name="message"
+                  placeholder="Tell us what instrument, course, or guidance you are seeking..."
+                  aria-required="true"
+                  aria-describedby="home-field-message-error"
+                ></textarea>
+                <span class="home-form-error" id="home-field-message-error" role="alert"></span>
+              </div>
+
+              <button type="submit" class="home-btn home-btn--primary home-btn--lg" id="home-form-submit-btn" style="width:100%;">
+                Submit Enquiry
+              </button>
+
+            </form>
+
+          </div><!-- /.home-enquiry-form-card -->
+
+        </div><!-- /.home-enquiry-layout -->
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="home-footer" role="contentinfo">
+    <div class="home-container">
+
+      <div class="home-footer-grid">
+
+        <div class="home-footer-brand">
+          <p class="home-footer-logo">Jyoti Music</p>
+          <p class="home-footer-desc">
+            A sanctuary for musicians of all generations. Curating exceptional acoustic instruments, delivering patient master tuition, and building a community rooted in the enduring joy of sound.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="home-footer-heading">Instruments</h3>
+          <nav aria-label="Footer: Instruments">
+            <a href="#home-instruments" class="home-footer-link">Classical Guitars</a>
+            <a href="#home-instruments" class="home-footer-link">Indian Tablas</a>
+            <a href="#home-instruments" class="home-footer-link">Studio Pianos</a>
+            <a href="#home-instruments" class="home-footer-link">Concert Sitars</a>
+            <a href="#home-instruments" class="home-footer-link">Bamboo Bansuris</a>
+          </nav>
+        </div>
+
+        <div>
+          <h3 class="home-footer-heading">Music Academy</h3>
+          <nav aria-label="Footer: Academy Courses">
+            <a href="#home-academy" class="home-footer-link">Acoustic Guitar Lessons</a>
+            <a href="#home-academy" class="home-footer-link">Tabla &amp; Rhythmics</a>
+            <a href="#home-academy" class="home-footer-link">Piano &amp; Keyboard Grade Prep</a>
+            <a href="#home-academy" class="home-footer-link">Hindustani Classical Vocal</a>
+            <a href="#home-academy" class="home-footer-link">Weekend Trial Classes</a>
+          </nav>
+        </div>
+
+        <div>
+          <h3 class="home-footer-heading">Visit &amp; Contact</h3>
+          <address style="font-style:normal; font-size: 0.875rem; line-height: 1.8; color: rgba(255,255,255,0.7);">
+            <p>Station Road, Near Central Circle</p>
+            <p>Phone: +91 98765 43210</p>
+            <p><a href="mailto:contact@jyotimusic.in" class="home-footer-link" style="padding:0;">contact@jyotimusic.in</a></p>
+            <p><a href="#home-enquiry" class="home-footer-link" style="padding:0; margin-top:8px; color:var(--home-secondary);">Send an Online Enquiry &rarr;</a></p>
+          </address>
+        </div>
+
+      </div>
+
+      <div class="home-footer-bottom">
+        <p>&copy; 2026 Jyoti Music. All rights reserved. Crafted with care for musicians everywhere.</p>
+        <div class="home-footer-bottom-links">
+          <a href="#home-hero">Privacy Policy</a>
+          <a href="#home-hero">Terms of Service</a>
+          <a href="#home-hero">Care &amp; Warranty</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Module script -->
+  <script src="js/script.js"></script>
+
+</body>
+</html>
