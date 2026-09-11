@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jyoti Music | Instruments</title>
+    <meta name="description" content="Explore thoughtfully selected instruments at Jyoti Music.">
+    <!-- Project typography and icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="products.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <a class="logo" href="#top" aria-label="Jyoti Music instruments home">
+            <span class="logo-mark"><i class="fa-solid fa-music"></i></span>
+            <span><strong>Jyoti</strong> Music</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary navigation">
+            <a href="#catalog">Instruments</a>
+            <a href="#about">Our approach</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <a class="btn btn-primary header-cta" href="#catalog"><i class="fa-solid fa-arrow-right"></i> Browse collection</a>
+    </header>
+
+    <main id="top">
+        <section class="catalog-hero" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <p class="eyebrow"><span></span> The sound starts here</p>
+                <h1 id="hero-title">Find the instrument<br><em>that feels like you.</em></h1>
+                <p class="hero-description">From first lessons to the next great performance, discover instruments chosen for their character, craft, and lasting joy.</p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#catalog">Explore instruments <i class="fa-solid fa-arrow-down"></i></a>
+                    <a class="text-link" href="#about">Why Jyoti Music <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="hero-visual" aria-label="Acoustic guitar in a warm music studio">
+                <img src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?auto=format&fit=crop&w=1200&q=85" alt="Acoustic guitar resting in a warm music studio">
+                <div class="hero-note"><i class="fa-solid fa-waveform-lines"></i><span>Made for<br><strong>your next note</strong></span></div>
+            </div>
+        </section>
+
+        <div class="catalog-shell" id="catalog">
+            <div class="catalog-heading">
+                <div>
+                    <p class="eyebrow">The collection</p>
+                    <h2>Explore musical instruments</h2>
+                </div>
+                <p class="catalog-intro">Quality instruments for curious beginners, dedicated learners, and working artists.</p>
+            </div>
+
+            <div class="catalog-tools">
+                <div class="search-wrap">
+                    <label class="sr-only" for="productSearch">Search instruments</label>
+                    <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                    <input id="productSearch" type="search" placeholder="Search by instrument or brand..." autocomplete="off">
+                </div>
+                <p class="results-count" id="resultsCount" aria-live="polite">Showing 16 instruments</p>
+            </div>
+        
+            <div id="listingView">
+                <div class="categories-wrapper" aria-label="Filter instruments by category">
+                    <div class="categories-grid">
+                        <button class="category-chip active" type="button" onclick="filterCategory('All')">
+                            <i class="fa-solid fa-border-all"></i>
+                            <span>All</span>
+                        </button>
+                        <button class="category-chip" type="button" onclick="filterCategory('Guitar')">
+                            <i class="fa-solid fa-guitar"></i>
+                            <span>Guitar</span>
+                        </button>
+                        <button class="category-chip" type="button" onclick="filterCategory('Keyboard')">
+                            <i class="fa-solid fa-keyboard"></i>
+                            <span>Keyboard</span>
+                        </button>
+                        <button class="category-chip" type="button" onclick="filterCategory('Tabla')">
+                            <i class="fa-solid fa-drum"></i>
+                            <span>Tabla</span>
+                        </button>
+                        <button class="category-chip" type="button" onclick="filterCategory('Harmonium')">
+                            <i class="fa-solid fa-compact-disc"></i>
+                            <span>Harmonium</span>
+                        </button>
+                        <button class="category-chip" type="button" onclick="filterCategory('Drum')">
+                            <i class="fa-solid fa-drum-steelpan"></i>
+                            <span>Drum</span>
+                        </button>
+                        <button class="category-chip" type="button" onclick="filterCategory('Violin')">
+                            <i class="fa-solid fa-file-audio"></i>
+                            <span>Violin</span>
+                        </button>
+                        <button class="category-chip" type="button" onclick="filterCategory('Flute')">
+                            <i class="fa-solid fa-wind"></i>
+                            <span>Flute</span>
+                        </button>
+                        <button class="category-chip" type="button" onclick="filterCategory('Other')">
+                            <i class="fa-solid fa-record-vinyl"></i>
+                            <span>Other</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="products-grid" id="productsGrid">
+                </div>
+            </div>
+        </div>
+
+        <div id="detailsView" class="product-details-view">
+            <button class="back-btn" type="button" onclick="showListingView()">
+                <i class="fa-solid fa-arrow-left"></i> Back to Listing
+            </button>
+
+            <div class="details-grid">
+                <div>
+                    <img id="detailImg" class="details-image" src="" alt="Product image">
+                </div>
+
+                <div class="details-content">
+                    <span id="detailCategory" class="details-category">Category</span>
+                    <h2 id="detailTitle">Product Title</h2>
+                    <div id="detailPrice" class="details-price">₹0.00</div>
+                    <p id="detailDesc" class="details-desc">Detailed description...</p>
+
+                    <h4>Specifications / Features</h4> n
+                    <table class="specs-table">
+                        <tbody id="detailSpecs">
+                            <!-- JS dynamic insertion -->
+                        </tbody>
+                    </table>
+
+                    <div class="cta-group">
+                        <a id="detailWhatsapp" href="#" target="_blank" class="btn btn-whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i> Enquire via WhatsApp
+                        </a>
+                        <a id="detailCall" href="tel:+919876543210" class="btn btn-primary">
+                            <i class="fa-solid fa-phone"></i> Contact Store
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer" id="about">
+        <div><span class="footer-brand">Jyoti Music</span><span>Thoughtful instruments for a life in music.</span></div>
+        <a id="contact" href="tel:+919876543210">Speak with our team <i class="fa-solid fa-arrow-right"></i></a>
+    </footer>
+
+    <!-- Custom JS Script -->
+    <script src="products.js"></script>
+</body>
+</html>
