@@ -1,4 +1,6 @@
-/* Header / Navbar */
+/* ==========================================================================
+   HEADER & NAVIGATION
+   ========================================================================== */
 .academy-header {
   position: sticky;
   top: 0;
@@ -32,7 +34,18 @@
   color: var(--primary);
 }
 
-/* Hero Section */
+.academy-mobile-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--primary-dark);
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* ==========================================================================
+   HERO SECTION
+   ========================================================================== */
 .academy-hero {
   padding: 80px 0;
   background-color: var(--background);
@@ -79,6 +92,7 @@
   display: flex;
   gap: 16px;
   margin-bottom: 36px;
+  flex-wrap: wrap;
 }
 
 .academy-trust-pills {
@@ -103,7 +117,6 @@
   box-shadow: var(--shadow-md);
 }
 
-/* Responsive, Sharp Hero Image Styling */
 .academy-hero-img {
   width: 100%;
   height: auto;
@@ -113,15 +126,11 @@
   object-position: center;
   border-radius: var(--radius-xl);
   display: block;
+  transition: transform 500ms ease;
 }
 
-/* Ensure mobile layout fits the full picture framing */
-@media (max-width: 767px) {
-  .academy-hero-img {
-    max-height: 280px;
-    aspect-ratio: 4 / 3;
-    object-position: 35% center; /* Focuses on master and student */
-  }
+.academy-hero-image-wrap:hover .academy-hero-img {
+  transform: scale(1.03);
 }
 
 .academy-status-badge {
@@ -135,6 +144,9 @@
   display: flex;
   align-items: center;
   gap: 12px;
+  transition:
+    transform 250ms ease,
+    box-shadow 250ms ease;
 }
 
 .status-dot {
@@ -144,7 +156,9 @@
   border-radius: 50%;
 }
 
-/* Sections General */
+/* ==========================================================================
+   SECTIONS & LAYOUTS
+   ========================================================================== */
 .academy-section {
   padding: 80px 0;
 }
@@ -167,205 +181,7 @@
   margin-bottom: 12px;
 }
 
-/* Courses Grid */
-.academy-courses-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
-
-.academy-course-card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-xl);
-  padding: 32px 28px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  transition:
-    transform 250ms ease,
-    box-shadow 250ms ease;
-}
-
-.academy-course-card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-md);
-}
-
-.academy-consult-card {
-  background-color: #3b2313;
-  color: #ffffff;
-  border: none;
-}
-
-.academy-consult-card .academy-course-title {
-  color: #ffffff;
-}
-
-.academy-consult-card p {
-  color: #e2d7cd;
-}
-
-/* Responsive */
-@media (max-width: 1024px) {
-  .academy-courses-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 768px) {
-  .academy-hero-grid {
-    grid-template-columns: 1fr;
-  }
-  .academy-hero-title {
-    font-size: 38px;
-  }
-  .academy-courses-grid {
-    grid-template-columns: 1fr;
-  }
-  .academy-nav {
-    display: none;
-  }
-}
-
-/*this is new effect*/
-
-.academy-course-card,
-.academy-status-badge {
-  transition:
-    transform 250ms ease,
-    box-shadow 250ms ease;
-}
-
-.academy-course-card:hover {
-  transform: translateY(-6px);
-  box-shadow: var(--shadow-md);
-}
-
-.academy-hero-img {
-  transition: transform 500ms ease;
-}
-
-.academy-hero-image-wrap:hover .academy-hero-img {
-  transform: scale(1.03);
-}
-
-/* Responsive Form Adjustments for Mobile Screens */
-@media (max-width: 600px) {
-  /* Stack grid inputs vertically into a single column */
-  #academy-enquiry-form div[style*="grid-template-columns"] {
-    grid-template-columns: 1fr !important;
-  }
-
-  /* Adjust form container padding for mobile */
-  #academy-enquiry-form {
-    padding: 24px 16px !important;
-  }
-
-  /* Improve input padding and font sizing */
-  #academy-enquiry-form input,
-  #academy-enquiry-form select,
-  #academy-enquiry-form textarea {
-    font-size: 14px;
-    padding: 10px 12px;
-  }
-}
-
-/* Form Responsive Grid Layout */
-.academy-form-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  margin-bottom: 20px;
-}
-
-@media (max-width: 600px) {
-  .academy-form-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Prevent dropdown & input overflow across all screens */
-#academy-enquiry-form select,
-#academy-enquiry-form input,
-#academy-enquiry-form textarea {
-  width: 100%;
-  max-width: 100%;
-  box-sizing: border-box;
-}
-
-.academy-mobile-toggle {
-  display: none;
-  background: none;
-  border: none;
-  color: var(--primary-dark);
-  font-size: 28px;
-  cursor: pointer;
-}
-
-@media (max-width: 768px) {
-  .academy-mobile-toggle {
-    display: flex;
-  }
-  .academy-nav {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background: var(--surface);
-    flex-direction: column;
-    padding: 20px;
-    gap: 16px;
-    box-shadow: var(--shadow-md);
-  }
-  .academy-nav.active {
-    display: flex;
-  }
-  .academy-header-cta {
-    display: none;
-  }
-}
-
-/* Course Card Image Wrapper & Hover Interactivity */
-.academy-card-img-wrap {
-  width: 100%;
-  height: 180px;
-  overflow: hidden;
-  border-radius: var(--radius-md) var(--radius-md) 0 0;
-}
-
-.academy-course-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-/* Image Zoom Effect on Hover */
-.academy-course-card:hover .academy-course-img {
-  transform: scale(1.06);
-}
-
-.academy-card-body {
-  padding: 20px;
-}
-
-.academy-card-title {
-  font-family: var(--font-heading);
-  font-size: 22px;
-  margin: 0 0 8px 0;
-  color: var(--primary-dark);
-}
-
-.academy-card-desc {
-  color: var(--text-muted);
-  font-size: 14px;
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
-
-/* Intro Section Layout (Stitch Design) */
+/* Intro Section */
 .academy-intro-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -373,14 +189,6 @@
   align-items: start;
 }
 
-@media (min-width: 992px) {
-  .academy-intro-grid {
-    grid-template-columns: 7fr 5fr;
-    gap: 60px;
-  }
-}
-
-/* Left Column Styling */
 .academy-intro-narrative {
   display: flex;
   flex-direction: column;
@@ -420,7 +228,6 @@
   line-height: 1.3;
 }
 
-/* Right Column: Philosophy Card */
 .academy-philosophy-card {
   background: var(--surface);
   border-radius: var(--radius-xl);
@@ -462,7 +269,6 @@
   font-weight: 600;
 }
 
-/* Pillar Items */
 .academy-pillars-list {
   display: flex;
   flex-direction: column;
@@ -503,4 +309,231 @@
   color: var(--text-muted);
   margin: 0;
   line-height: 1.4;
+}
+
+/* ==========================================================================
+   COURSES & CARDS GRID
+   ========================================================================== */
+.academy-courses-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.academy-course-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition:
+    transform 250ms ease,
+    box-shadow 250ms ease;
+}
+
+.academy-course-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+}
+
+.academy-consult-card {
+  background-color: #3b2313;
+  color: #ffffff;
+  border: none;
+}
+
+.academy-consult-card .academy-course-title {
+  color: #ffffff;
+}
+
+.academy-consult-card p {
+  color: #e2d7cd;
+}
+
+.academy-card-img-wrap {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+}
+
+.academy-course-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.academy-course-card:hover .academy-course-img {
+  transform: scale(1.06);
+}
+
+.academy-card-body {
+  padding: 20px 0 0 0;
+}
+
+.academy-card-title {
+  font-family: var(--font-heading);
+  font-size: 22px;
+  margin: 0 0 8px 0;
+  color: var(--primary-dark);
+}
+
+.academy-card-desc {
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* ==========================================================================
+   FORM RESPONSIVENESS
+   ========================================================================== */
+.academy-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+#academy-enquiry-form select,
+#academy-enquiry-form input,
+#academy-enquiry-form textarea {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* ==========================================================================
+   MEDIA QUERIES (DESKTOP, TABLET & MOBILE BREAKPOINTS)
+   ========================================================================== */
+
+/* Desktop / Large Screens */
+@media (min-width: 992px) {
+  .academy-intro-grid {
+    grid-template-columns: 7fr 5fr;
+    gap: 60px;
+  }
+}
+
+/* Tablet & Mobile Screens (Up to 1024px) */
+@media (max-width: 1024px) {
+  .academy-header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  /* Hide header CTA button on tablet/mobile to keep header clean */
+  .academy-header-cta {
+    display: none;
+  }
+
+  /* Position hamburger button in top right corner */
+  .academy-mobile-toggle {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto; /* Moves button to the top right */
+    padding: 6px;
+    font-size: 30px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    color: var(--primary-dark);
+  }
+
+  /* Dropdown menu overlay when open */
+  .academy-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: var(--surface);
+    flex-direction: column;
+    padding: 20px 24px;
+    gap: 16px;
+    box-shadow: var(--shadow-md);
+    border-bottom: 1px solid var(--border);
+    z-index: 1000;
+  }
+
+  .academy-nav.active {
+    display: flex !important;
+  }
+}
+
+/* Mobile Screens Only (767px and below) */
+@media (max-width: 767px) {
+  .academy-header-cta {
+    display: none; /* Hide top CTA on small phones to preserve header space */
+  }
+
+  .academy-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .academy-courses-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+/* Fix for Small Mobile Screens (390px and under) */
+@media (max-width: 480px) {
+  /* Prevent horizontal page overflow */
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Scale title font size down so it fits without stretching */
+  .academy-hero-title {
+    font-size: 32px !important;
+    line-height: 1.2;
+  }
+
+  /* Keep brand header elements tight */
+  .academy-brand {
+    max-width: 75%;
+  }
+
+  /* Allow trust pills to stack naturally */
+  .academy-trust-pills {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  /* Ensure hero buttons fit cleanly side-by-side or stack */
+  .academy-hero-ctas {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .academy-hero-ctas .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Stack form inputs on mobile so placeholders fit without getting cut off */
+@media (max-width: 600px) {
+  .academy-form-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px;
+  }
+
+  #academy-enquiry-form input,
+  #academy-enquiry-form select,
+  #academy-enquiry-form textarea {
+    font-size: 14px;
+    padding: 12px;
+  }
 }

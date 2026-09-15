@@ -7,19 +7,19 @@
 /* ---------- CUSTOM PROPERTIES (DESIGN TOKENS) ---------- */
 :root {
   /* Colors - exact match to DESIGN.md */
-  --home-primary: #8B5E34;
-  --home-primary-dark: #5C3A21;
-  --home-secondary: #C89B5A;
-  --home-accent: #A63D40;
-  --home-bg: #FAF7F2;
-  --home-surface: #FFFFFF;
+  --home-primary: #8b5e34;
+  --home-primary-dark: #5c3a21;
+  --home-secondary: #c89b5a;
+  --home-accent: #a63d40;
+  --home-bg: #faf7f2;
+  --home-surface: #ffffff;
   --home-text: #252525;
-  --home-text-muted: #6F6A63;
-  --home-border: #E8DED2;
+  --home-text-muted: #6f6a63;
+  --home-border: #e8ded2;
 
   /* Typography */
-  --home-font-heading: 'Playfair Display', Georgia, 'Times New Roman', serif;
-  --home-font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  --home-font-heading: "Playfair Display", Georgia, "Times New Roman", serif;
+  --home-font-body: "Inter", system-ui, -apple-system, sans-serif;
 
   /* Spacing Scale (4px base scale) */
   --home-space-1: 4px;
@@ -43,12 +43,12 @@
   --home-radius-xl: 28px;
 
   /* Shadows — warm-tinted, subtle */
-  --home-shadow-sm: 0 1px 3px rgba(92, 58, 33, 0.06),
-                    0 1px 2px rgba(92, 58, 33, 0.04);
-  --home-shadow-md: 0 4px 14px rgba(92, 58, 33, 0.08),
-                    0 2px 6px rgba(92, 58, 33, 0.04);
-  --home-shadow-lg: 0 14px 36px rgba(92, 58, 33, 0.12),
-                    0 4px 10px rgba(92, 58, 33, 0.05);
+  --home-shadow-sm:
+    0 1px 3px rgba(92, 58, 33, 0.06), 0 1px 2px rgba(92, 58, 33, 0.04);
+  --home-shadow-md:
+    0 4px 14px rgba(92, 58, 33, 0.08), 0 2px 6px rgba(92, 58, 33, 0.04);
+  --home-shadow-lg:
+    0 14px 36px rgba(92, 58, 33, 0.12), 0 4px 10px rgba(92, 58, 33, 0.05);
 
   /* Transitions */
   --home-transition-fast: 150ms ease;
@@ -102,7 +102,8 @@ button {
   font-size: inherit;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -113,7 +114,10 @@ ul, ol {
 }
 
 /* ---------- TYPOGRAPHY ---------- */
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: var(--home-font-heading);
   font-weight: 600;
   line-height: 1.25;
@@ -169,8 +173,9 @@ h1, h2, h3, h4 {
 .home-reveal {
   opacity: 0;
   transform: translateY(var(--home-space-6));
-  transition: opacity var(--home-transition-reveal),
-              transform var(--home-transition-reveal);
+  transition:
+    opacity var(--home-transition-reveal),
+    transform var(--home-transition-reveal);
   will-change: opacity, transform;
 }
 
@@ -195,11 +200,12 @@ h1, h2, h3, h4 {
   cursor: pointer;
   white-space: nowrap;
   text-decoration: none;
-  transition: background-color var(--home-transition-fast),
-              color var(--home-transition-fast),
-              border-color var(--home-transition-fast),
-              transform var(--home-transition-fast),
-              box-shadow var(--home-transition-fast);
+  transition:
+    background-color var(--home-transition-fast),
+    color var(--home-transition-fast),
+    border-color var(--home-transition-fast),
+    transform var(--home-transition-fast),
+    box-shadow var(--home-transition-fast);
 }
 
 .home-btn:active {
@@ -240,7 +246,6 @@ h1, h2, h3, h4 {
   border-radius: var(--home-radius-md);
 }
 
-
 /* ========================================
    HEADER & NAVIGATION
    ======================================== */
@@ -251,14 +256,15 @@ h1, h2, h3, h4 {
   right: 0;
   z-index: 100;
   border-bottom: 1px solid rgba(232, 222, 210, 0.6);
-  transition: box-shadow var(--home-transition-base),
-              border-color var(--home-transition-base);
+  transition:
+    box-shadow var(--home-transition-base),
+    border-color var(--home-transition-base);
 }
 
 /* Blur ab pseudo-element pe hai — header khud filter-free hai,
    isliye fixed descendants (drawer, overlay) viewport ke against sahi calculate honge */
 .home-header::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   z-index: -1;
@@ -314,7 +320,7 @@ h1, h2, h3, h4 {
 }
 
 .home-nav-link::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: -2px;
@@ -356,8 +362,9 @@ h1, h2, h3, h4 {
   height: 2px;
   background-color: var(--home-text);
   border-radius: 1px;
-  transition: transform var(--home-transition-base),
-              opacity var(--home-transition-fast);
+  transition:
+    transform var(--home-transition-base),
+    opacity var(--home-transition-fast);
   transform-origin: center;
 }
 
@@ -377,7 +384,6 @@ h1, h2, h3, h4 {
 .home-nav-overlay {
   display: none;
 }
-
 
 /* ========================================
    HERO SECTION — SLIDER / CAROUSEL
@@ -406,7 +412,9 @@ h1, h2, h3, h4 {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity 700ms ease, visibility 700ms ease;
+  transition:
+    opacity 700ms ease,
+    visibility 700ms ease;
   display: flex;
   align-items: center;
   padding-top: var(--home-space-30);
@@ -440,8 +448,18 @@ h1, h2, h3, h4 {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(37, 24, 15, 0.94) 0%, rgba(37, 24, 15, 0.82) 48%, rgba(37, 24, 15, 0.46) 82%, rgba(37, 24, 15, 0.32) 100%),
-    radial-gradient(ellipse at 80% 30%, rgba(200, 155, 90, 0.18) 0%, transparent 60%);
+    linear-gradient(
+      90deg,
+      rgba(37, 24, 15, 0.94) 0%,
+      rgba(37, 24, 15, 0.82) 48%,
+      rgba(37, 24, 15, 0.46) 82%,
+      rgba(37, 24, 15, 0.32) 100%
+    ),
+    radial-gradient(
+      ellipse at 80% 30%,
+      rgba(200, 155, 90, 0.18) 0%,
+      transparent 60%
+    );
   pointer-events: none;
 }
 
@@ -578,8 +596,9 @@ h1, h2, h3, h4 {
   border: none;
   cursor: pointer;
   padding: 0;
-  transition: background-color var(--home-transition-fast),
-              width var(--home-transition-base);
+  transition:
+    background-color var(--home-transition-fast),
+    width var(--home-transition-base);
 }
 
 .home-hero-dot:hover {
@@ -590,7 +609,6 @@ h1, h2, h3, h4 {
   background-color: var(--home-secondary);
   width: 28px;
 }
-
 
 /* ========================================
    FEATURED INSTRUMENTS SECTION
@@ -613,9 +631,10 @@ h1, h2, h3, h4 {
   border: 1px solid var(--home-border);
   display: flex;
   flex-direction: column;
-  transition: transform var(--home-transition-base),
-              box-shadow var(--home-transition-base),
-              border-color var(--home-transition-base);
+  transition:
+    transform var(--home-transition-base),
+    box-shadow var(--home-transition-base),
+    border-color var(--home-transition-base);
 }
 
 .home-instrument-card:hover {
@@ -690,7 +709,6 @@ h1, h2, h3, h4 {
   font-weight: 700;
   color: var(--home-primary-dark);
 }
-
 
 /* ========================================
    ACADEMY PREVIEW & COURSE CARDS
@@ -816,9 +834,10 @@ h1, h2, h3, h4 {
   border: 1px solid var(--home-border);
   display: flex;
   flex-direction: column;
-  transition: transform var(--home-transition-base),
-              box-shadow var(--home-transition-base),
-              border-color var(--home-transition-base);
+  transition:
+    transform var(--home-transition-base),
+    box-shadow var(--home-transition-base),
+    border-color var(--home-transition-base);
 }
 
 .home-course-card:hover {
@@ -896,7 +915,6 @@ h1, h2, h3, h4 {
   color: var(--home-primary-dark);
 }
 
-
 /* ========================================
    WHY CHOOSE JYOTI MUSIC
    ======================================== */
@@ -916,9 +934,10 @@ h1, h2, h3, h4 {
   background-color: var(--home-surface);
   border-radius: var(--home-radius-md);
   border: 1px solid var(--home-border);
-  transition: box-shadow var(--home-transition-base),
-              border-color var(--home-transition-base),
-              transform var(--home-transition-base);
+  transition:
+    box-shadow var(--home-transition-base),
+    border-color var(--home-transition-base),
+    transform var(--home-transition-base);
 }
 
 .home-why-card:hover {
@@ -961,7 +980,6 @@ h1, h2, h3, h4 {
   line-height: 1.65;
 }
 
-
 /* ========================================
    POPULAR PRODUCTS / STORE ITEMS
    ======================================== */
@@ -982,8 +1000,9 @@ h1, h2, h3, h4 {
   border: 1px solid var(--home-border);
   display: flex;
   flex-direction: column;
-  transition: transform var(--home-transition-base),
-              box-shadow var(--home-transition-base);
+  transition:
+    transform var(--home-transition-base),
+    box-shadow var(--home-transition-base);
 }
 
 .home-product-card:hover {
@@ -1060,7 +1079,6 @@ h1, h2, h3, h4 {
   margin-top: var(--home-space-12);
 }
 
-
 /* ========================================
    TESTIMONIALS CAROUSEL
    ======================================== */
@@ -1135,10 +1153,18 @@ h1, h2, h3, h4 {
   margin-bottom: var(--home-space-2);
 }
 
-.home-placeholder-bg-1 { background: linear-gradient(145deg, #C89B5A 0%, #8B5E34 100%); }
-.home-placeholder-bg-2 { background: linear-gradient(145deg, #8B5E34 0%, #5C3A21 100%); }
-.home-placeholder-bg-3 { background: linear-gradient(145deg, #5C3A21 0%, #C89B5A 100%); }
-.home-placeholder-bg-5 { background: linear-gradient(145deg, #A63D40 0%, #5C3A21 100%); }
+.home-placeholder-bg-1 {
+  background: linear-gradient(145deg, #c89b5a 0%, #8b5e34 100%);
+}
+.home-placeholder-bg-2 {
+  background: linear-gradient(145deg, #8b5e34 0%, #5c3a21 100%);
+}
+.home-placeholder-bg-3 {
+  background: linear-gradient(145deg, #5c3a21 0%, #c89b5a 100%);
+}
+.home-placeholder-bg-5 {
+  background: linear-gradient(145deg, #a63d40 0%, #5c3a21 100%);
+}
 
 .home-testimonial-name {
   font-weight: 600;
@@ -1202,15 +1228,15 @@ h1, h2, h3, h4 {
   border: none;
   cursor: pointer;
   padding: 0;
-  transition: background-color var(--home-transition-fast),
-              width var(--home-transition-base);
+  transition:
+    background-color var(--home-transition-fast),
+    width var(--home-transition-base);
 }
 
 .home-testimonials-dot--active {
   background-color: var(--home-primary);
   width: 24px;
 }
-
 
 /* ========================================
    STUDIO GALLERY & LIGHTBOX
@@ -1261,14 +1287,16 @@ h1, h2, h3, h4 {
   background: rgba(37, 37, 37, 0.82);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 0.75rem;
   font-weight: 500;
   padding: 4px 10px;
   border-radius: var(--home-radius-sm);
   opacity: 0;
   transform: translateY(4px);
-  transition: opacity var(--home-transition-fast), transform var(--home-transition-fast);
+  transition:
+    opacity var(--home-transition-fast),
+    transform var(--home-transition-fast);
   pointer-events: none;
 }
 
@@ -1298,8 +1326,9 @@ h1, h2, h3, h4 {
   padding: var(--home-space-8);
   opacity: 0;
   visibility: hidden;
-  transition: opacity var(--home-transition-base),
-              visibility var(--home-transition-base);
+  transition:
+    opacity var(--home-transition-base),
+    visibility var(--home-transition-base);
 }
 
 .home-lightbox--active {
@@ -1355,7 +1384,9 @@ h1, h2, h3, h4 {
   justify-content: center;
   cursor: pointer;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  transition: background-color var(--home-transition-fast), transform var(--home-transition-fast);
+  transition:
+    background-color var(--home-transition-fast),
+    transform var(--home-transition-fast);
 }
 
 .home-lightbox-close:hover {
@@ -1368,14 +1399,17 @@ h1, h2, h3, h4 {
   height: 22px;
 }
 
-
 /* ========================================
    ENQUIRY / CONTACT CTA SECTION
    ======================================== */
 .home-enquiry {
   background:
-    radial-gradient(ellipse at 80% 30%, rgba(200, 155, 90, 0.18) 0%, transparent 55%),
-    linear-gradient(160deg, #5C3A21 0%, #7A5230 40%, #8B5E34 100%);
+    radial-gradient(
+      ellipse at 80% 30%,
+      rgba(200, 155, 90, 0.18) 0%,
+      transparent 55%
+    ),
+    linear-gradient(160deg, #5c3a21 0%, #7a5230 40%, #8b5e34 100%);
   color: var(--home-surface);
 }
 
@@ -1502,8 +1536,9 @@ h1, h2, h3, h4 {
   border: 1px solid var(--home-border);
   border-radius: var(--home-radius-sm);
   outline: none;
-  transition: border-color var(--home-transition-fast),
-              box-shadow var(--home-transition-fast);
+  transition:
+    border-color var(--home-transition-fast),
+    box-shadow var(--home-transition-fast);
 }
 
 .home-form-input::placeholder,
@@ -1516,7 +1551,7 @@ h1, h2, h3, h4 {
 .home-form-textarea:focus {
   border-color: var(--home-primary);
   box-shadow: 0 0 0 3px rgba(139, 94, 52, 0.15);
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .home-form-textarea {
@@ -1594,7 +1629,6 @@ h1, h2, h3, h4 {
   margin: 0 auto;
 }
 
-
 /* ========================================
    FOOTER
    ======================================== */
@@ -1646,7 +1680,9 @@ h1, h2, h3, h4 {
   color: rgba(255, 255, 255, 0.65);
   padding: var(--home-space-1) 0;
   text-decoration: none;
-  transition: color var(--home-transition-fast), transform var(--home-transition-fast);
+  transition:
+    color var(--home-transition-fast),
+    transform var(--home-transition-fast);
 }
 
 .home-footer-link:hover {
@@ -1677,7 +1713,6 @@ h1, h2, h3, h4 {
 .home-footer-bottom-links a:hover {
   color: var(--home-secondary);
 }
-
 
 /* ========================================
    RESPONSIVE — TABLET (768–1023px)
@@ -1717,7 +1752,6 @@ h1, h2, h3, h4 {
     gap: var(--home-space-10);
   }
 }
-
 
 /* ========================================
    RESPONSIVE — MOBILE (<768px)
@@ -1766,14 +1800,18 @@ h1, h2, h3, h4 {
     color: var(--home-text);
   }
 
-  .home-nav-link:hover,
-  .home-nav-link--active {
-    background-color: var(--home-bg);
+  /* Only show underline on HOVER */
+  .home-nav-link:hover {
     color: var(--home-primary);
   }
 
-  .home-nav-link::after {
-    display: none;
+  .home-nav-link:hover::after {
+    width: 100%;
+  }
+
+  /* Remove underline from scroll active class */
+  .home-nav-link--active::after {
+    width: 0 !important;
   }
 
   .home-nav-overlay {
@@ -1786,8 +1824,9 @@ h1, h2, h3, h4 {
     z-index: 102;
     opacity: 0;
     visibility: hidden;
-    transition: opacity var(--home-transition-base),
-                visibility var(--home-transition-base);
+    transition:
+      opacity var(--home-transition-base),
+      visibility var(--home-transition-base);
   }
 
   .home-nav-overlay--visible {
@@ -1920,7 +1959,6 @@ h1, h2, h3, h4 {
   }
 }
 
-
 /* ========================================
    LARGE DESKTOP (1280px+)
    ======================================== */
@@ -1933,7 +1971,6 @@ h1, h2, h3, h4 {
     grid-template-rows: 270px 270px;
   }
 }
-
 
 /* ========================================
    REDUCED MOTION ACCESSIBILITY
